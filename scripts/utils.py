@@ -1,26 +1,25 @@
 import soundfile as sf
 import torch
 from TTS.api import TTS
+from fairseq.checkpoint_utils import load_model_ensemble_and_task_from_hf_hub
+from fairseq.models.text_to_speech.hub_interface import TTSHubInterface
 
-xtts = None
 
 
-def fastspeech_tts(text):
-    from fairseq.checkpoint_utils import load_model_ensemble_and_task_from_hf_hub
-    from fairseq.models.text_to_speech.hub_interface import TTSHubInterface
+class FastSpeech:
 
-    models, cfg, task = load_model_ensemble_and_task_from_hf_hub(
-        "facebook/fastspeech2-en-ljspeech",
-        arg_overrides={"vocoder": "hifigan", "fp16": False}
-    )
+    def __init__(self):
+        self.models, cfg, self.task = load_model_ensemble_and_task_from_hf_hub(
+            "facebook/fastspeech2-en-ljspeech",
+            arg_overrides={"vocoder": "hifigan", "fp16": False}
+        )
+        TTSHubInterface.update_cfg_with_data_cfg(cfg, self.task.data_cfg)
+        self.generator = self.task.build_generator(self.models, cfg)
 
-    model = models[0]
-    TTSHubInterface.update_cfg_with_data_cfg(cfg, task.data_cfg)
-    generator = task.build_generator([model], cfg)
-
-    sample = TTSHubInterface.get_model_input(task, text)
-    wav, rate = TTSHubInterface.get_prediction(task, model, generator, sample)
-    return wav, rate
+    def tts(self, text):
+        sample = TTSHubInterface.get_model_input(self.task, text)
+        wav, rate = TTSHubInterface.get_prediction(self.task, self.models[0], self.generator, sample)
+        return wav, rate
 
 
 class Xtts:
