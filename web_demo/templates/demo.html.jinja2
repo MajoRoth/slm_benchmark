@@ -1,0 +1,56 @@
+{% extends "base.html.jinja2" %}
+{% block tables %}
+
+    {% for section in sections %}
+        {% if loop.index % 2 == 0 %}
+            <section class="section hero is-light">
+        {% else %}
+            <section class="section hero">
+        {% endif %}
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">{{ section.title }}</h2>
+            <p>
+                {{ section.description }}
+            </p>
+            <br>
+            <br>
+
+            <table class="audio-table">
+                <thead>
+                <tr>
+                    {% for header in section.table.headers %}
+                        <th class="audio-header-row">{{ header }}</th>
+                    {% endfor %}
+                </tr>
+                </thead>
+                <tbody>
+
+                {% for row in section.table.content %}
+                    <tr>
+                        <td class="">
+                            <p>
+                                {{ row[0] }}
+                            </p>
+                        </td>
+
+                        {% for audio in row[1:] %}
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src={{ audio }}>
+                                </audio>
+                            </td>
+                        {% endfor %}
+
+                    </tr>
+                {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    </section>
+
+    {% endfor %}
+
+{% endblock %}
