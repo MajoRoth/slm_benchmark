@@ -1,12 +1,12 @@
 import argparse
 import os
 
-import librosa
-import numpy as np
-import soundfile as sf
 from pathlib import Path
-from utils import FastSpeech
+from utils.fastspeech import FastSpeech
 from tqdm import tqdm
+
+from utils.audio import *
+
 
 def get_text_for_class(text_class):
     texts = {
@@ -30,17 +30,15 @@ def background_noise_alignment(text_class, background_noise_directory, output_pa
 
     speech_wav, speech_sr = fastspeech.tts(get_text_for_class(text_class))
 
+    if speech_sr != GENERAL_SAMPLING_RATE:
+        speech_wav = resample(speech_wav, speech_sr, GENERAL_SAMPLING_RATE)
+
     for bg_path in tqdm(bg_paths, desc="generating audio samples"):
-        bg_wav, bg_sr = sf.read(bg_path)
-        bg_wav = librosa.resample(y=bg_wav, orig_sr=bg_sr, target_sr=speech_sr)
+        bg_wav = safe_load_audio(bg_path)
 
-        min_length = min(len(speech_wav), len(bg_wav))
+        merged_data = merge_audio(speech_wav, bg_wav)
 
-        merged_data = np.vstack((speech_wav[:min_length], bg_wav[:min_length])).T
-        merged_data = merged_data.sum(axis=1) / 2
-        print(merged_data)
-
-        sf.write(Path(output_path) / f"text_{text_class}" / bg_path.name, merged_data, speech_sr)
+        safe_write_audio(Path(output_path) / f"text_{text_class}" / bg_path.name, merged_data)
 
 
 def get_parser():
