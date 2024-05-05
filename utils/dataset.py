@@ -109,6 +109,8 @@ class TextDataset:
 
         return self.lines[item]
 
+    def get_random_text(self):
+        return self[random.randint(0, self.len)]
 
 def parse_RAVDESS(original_dataset_path, parsed_dataset_path):
     """
@@ -210,10 +212,10 @@ def parse_FSD(original_dataset_path, parsed_dataset_path):
 
 
 if __name__ == '__main__':
-    parse_RAVDESS("/Users/amitroth/Downloads/Audio_Speech_Actors_01-24", "/Users/amitroth/PycharmProjects/slm-benchnark/audio/emotion_prompts")
+    # parse_RAVDESS("/Users/amitroth/Downloads/Audio_Speech_Actors_01-24", "/Users/amitroth/PycharmProjects/slm-benchnark/audio/emotion_prompts")
     # wav = get_emotion_prompt("happy", speaker="male")
 
-    # d = TextDataset("/Users/amitroth/PycharmProjects/slm-benchnark/txt/sentiment/happy.txt")
+    d = TextDataset("/Users/amitroth/PycharmProjects/slm-benchnark/txt/sentiment/happy.txt")
     # shutil.copy("/cs/labs/adiyoss/amitroth/datasets/FSD50K.dev_audio/16845.wav", "/cs/labs/adiyoss/amitroth/slm-benchmark/16845.wav")
     # parse_FSD("/cs/labs/adiyoss/amitroth/datasets/FSD50K.ground_truth/dev.csv",
     #           "/cs/labs/adiyoss/amitroth/slm-benchmark/audio/background_noises")
