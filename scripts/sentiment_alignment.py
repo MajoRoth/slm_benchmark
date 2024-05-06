@@ -36,26 +36,35 @@ def sentiment_alignment(output_path, args):
         sad_text = sad_dataset.get_random_text()
         happy_text = happy_dataset.get_random_text()
 
-        speaker = random.choice(speakers)
         sample_metadata = {
-            "index": i,
-            "speaker": speaker['speaker'],
-            "prompt": speaker['prompt'],
-            "prompts_paths": {},
+            "sample": i,
+            "speakers": list(),
             "sad_text": sad_text,
-            "happy_text": happy_text,
-            "generated_audio": {}
+            "happy_text": happy_text
+
         }
+        for speaker in speakers:
 
-        for emotion in emotions_prompts_dataset.get_emotions():
-            prompt_path = emotions_prompts_dataset.get_audio_path(emotion=emotion, speaker=speaker['speaker'], text=speaker['prompt'])
-            sample_metadata['prompts_paths'][emotion] = str(prompt_path)
-            xtts.tts_to_file(happy_text, prompt_path, output_path / f"sample_{i}_{emotion}_happy.wav")  # happy text
-            xtts.tts_to_file(sad_text, prompt_path, output_path / f"sample_{i}_{emotion}_sad.wav")  # sad text
-            sample_metadata['generated_audio'][f"{emotion}_happy"] = str(output_path / f"sample_{i}_{emotion}_happy.wav")
-            sample_metadata['generated_audio'][f"{emotion}_sad"] = str(output_path / f"sample_{i}_{emotion}_sad.wav")
+            speaker_metadata = {
+                "index": i,
+                "speaker": speaker['speaker'],
+                "prompt": speaker['prompt'],
+                "prompts_paths": {},
+                "sad_text": sad_text,
+                "happy_text": happy_text,
+                "generated_audio": {}
+            }
+
+            for emotion in emotions_prompts_dataset.get_emotions():
+                prompt_path = emotions_prompts_dataset.get_audio_path(emotion=emotion, speaker=speaker['speaker'], text=speaker['prompt'])
+                speaker_metadata['prompts_paths'][emotion] = str(prompt_path)
+                xtts.tts_to_file(happy_text, prompt_path, output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_happy.wav")  # happy text
+                xtts.tts_to_file(sad_text, prompt_path, output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_sad.wav")  # sad text
+                speaker_metadata['generated_audio'][f"{emotion}_happy"] = str(output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_happy.wav")
+                speaker_metadata['generated_audio'][f"{emotion}_sad"] = str(output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_sad.wav")
 
 
+            sample_metadata['speakers'].append(speaker_metadata)
 
         metadata.append(sample_metadata)
 
@@ -82,14 +91,14 @@ def get_parser():
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="generated_audio/sentiment_alignment/new"
+        default="/cs/labs/adiyoss/amitroth/slm-benchmark/generated_audio/sentiment_alignment/comp"
     )
 
     parser.add_argument(
         "--samples-num",
         type=int,
         help="amount of samples to generate",
-        default=10,
+        default=3,
     )
 
     return parser
@@ -101,7 +110,10 @@ if __name__ == '__main__':
 
     # eval("/Users/amitroth/PycharmProjects/slm-benchnark/generated_audio/sentiment_alignment/eval")
 
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+
     sentiment_alignment(
-        output_path=os.path.join(os.path.dirname(__file__), "..", args.output_dir),
+        output_path=args.output_dir,
         args=args
     )

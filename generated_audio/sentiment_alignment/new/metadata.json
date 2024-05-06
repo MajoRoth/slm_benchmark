@@ -11,12 +11,12 @@
     "sad_text": "I feel like I'm running out of hope.\n",
     "happy_text": "Every day is a new opportunity for happiness.\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_0_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_0_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_0_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_0_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_0_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_0_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_0_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_0_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_0_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_0_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_0_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_0_neutral_sad.wav"
     }
   },
   {
@@ -31,12 +31,12 @@
     "sad_text": "I feel like I'm falling apart.\n",
     "happy_text": "Happiness is a choice, and I choose it every day.\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_1_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_1_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_1_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_1_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_1_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_1_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_1_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_1_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_1_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_1_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_1_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_1_neutral_sad.wav"
     }
   },
   {
@@ -51,12 +51,12 @@
     "sad_text": "I don't know how much longer I can keep going like this.\n",
     "happy_text": "I'm feeling so happy and content right now.\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_2_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_2_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_2_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_2_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_2_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_2_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_2_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_2_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_2_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_2_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_2_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_2_neutral_sad.wav"
     }
   },
   {
@@ -71,12 +71,12 @@
     "sad_text": "I don't know how much longer I can keep pretending.\n",
     "happy_text": "I feel like the luckiest person alive!\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_3_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_3_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_3_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_3_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_3_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_3_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_3_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_3_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_3_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_3_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_3_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_3_neutral_sad.wav"
     }
   },
   {
@@ -91,12 +91,12 @@
     "sad_text": "I'm tired of feeling like I'm not enough.\n",
     "happy_text": "I received a compliment on my smile today.\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_4_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_4_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_4_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_4_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_4_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_4_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_4_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_4_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_4_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_4_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_4_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_4_neutral_sad.wav"
     }
   },
   {
@@ -111,12 +111,12 @@
     "sad_text": "I wish I could go back to a time when I felt truly happy.\n",
     "happy_text": "Wow, what a beautiful day!\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_5_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_5_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_5_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_5_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_5_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_5_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_5_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_5_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_5_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_5_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_5_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_5_neutral_sad.wav"
     }
   },
   {
@@ -131,12 +131,12 @@
     "sad_text": "I don't know how much longer I can keep pretending.\n",
     "happy_text": "Today is going to be amazing, I can feel it!\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_6_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_6_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_6_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_6_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_6_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_6_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_6_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_6_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_6_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_6_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_6_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_6_neutral_sad.wav"
     }
   },
   {
@@ -151,12 +151,12 @@
     "sad_text": "I feel like a failure.\n",
     "happy_text": "I'm so glad to be alive!\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_7_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_7_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_7_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_7_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_7_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_7_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_7_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_7_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_7_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_7_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_7_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_7_neutral_sad.wav"
     }
   },
   {
@@ -171,12 +171,12 @@
     "sad_text": "I miss the person I used to be before all this pain.\n",
     "happy_text": "Life is full of little miracles.\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_8_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_8_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_8_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_8_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_8_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_8_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_8_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_8_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_8_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_8_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_8_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_8_neutral_sad.wav"
     }
   },
   {
@@ -191,12 +191,12 @@
     "sad_text": "I don't know if I'll ever feel whole again.\n",
     "happy_text": "Happiness is contagious!\n",
     "generated_audio": {
-      "happy_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_9_happy_happy.wav",
-      "happy_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_9_happy_sad.wav",
-      "sad_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_9_sad_happy.wav",
-      "sad_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_9_sad_sad.wav",
-      "neutral_happy": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_9_neutral_happy.wav",
-      "neutral_sad": "/Users/amitroth/PycharmProjects/slm-benchnark/scripts/../generated_audio/sentiment_alignment/new/sample_9_neutral_sad.wav"
+      "happy_happy": "../generated_audio/sentiment_alignment/new/sample_9_happy_happy.wav",
+      "happy_sad": "../generated_audio/sentiment_alignment/new/sample_9_happy_sad.wav",
+      "sad_happy": "../generated_audio/sentiment_alignment/new/sample_9_sad_happy.wav",
+      "sad_sad": "../generated_audio/sentiment_alignment/new/sample_9_sad_sad.wav",
+      "neutral_happy": "../generated_audio/sentiment_alignment/new/sample_9_neutral_happy.wav",
+      "neutral_sad": "../generated_audio/sentiment_alignment/new/sample_9_neutral_sad.wav"
     }
   }
 ]
