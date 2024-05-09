@@ -14,10 +14,10 @@ def sentiment_alignment(output_path, args):
     speakers = [
         {'speaker': 3, 'prompt': 'concat'},
         {'speaker': 5, 'prompt': 'concat'},
-        {'speaker': 19, 'prompt': 'concat'},
+        # {'speaker': 19, 'prompt': 'concat'},
         {'speaker': 23, 'prompt': 'concat'},
         {'speaker': 2, 'prompt': 'concat'},
-        {'speaker': 8, 'prompt': 'kids'},
+        # {'speaker': 8, 'prompt': 'kids'},
         {'speaker': 12, 'prompt': 'concat'},
         {'speaker': 22, 'prompt': 'concat'},
         {'speaker': 24, 'prompt': 'concat'}
@@ -58,8 +58,8 @@ def sentiment_alignment(output_path, args):
             for emotion in emotions_prompts_dataset.get_emotions():
                 prompt_path = emotions_prompts_dataset.get_audio_path(emotion=emotion, speaker=speaker['speaker'], text=speaker['prompt'])
                 speaker_metadata['prompts_paths'][emotion] = str(prompt_path)
-                xtts.tts_to_file(happy_text, prompt_path, output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_happy.wav")  # happy text
-                xtts.tts_to_file(sad_text, prompt_path, output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_sad.wav")  # sad text
+                xtts.top_wer_sampling(happy_text, prompt_path, output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_happy.wav", k=args.top_wer)  # happy text
+                xtts.top_wer_sampling(sad_text, prompt_path, output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_sad.wav", k=args.top_wer)  # sad text
                 speaker_metadata['generated_audio'][f"{emotion}_happy"] = str(output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_happy.wav")
                 speaker_metadata['generated_audio'][f"{emotion}_sad"] = str(output_path / f"sample_{i}_{emotion}_{speaker['speaker']}_sad.wav")
 
@@ -91,14 +91,21 @@ def get_parser():
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="/cs/labs/adiyoss/amitroth/slm-benchmark/generated_audio/sentiment_alignment/comp"
+        default="/cs/labs/adiyoss/amitroth/slm-benchmark/generated_audio/sentiment_alignment/top_wer"
     )
 
     parser.add_argument(
         "--samples-num",
         type=int,
         help="amount of samples to generate",
-        default=3,
+        default=5,
+    )
+
+    parser.add_argument(
+        "--top-wer",
+        type=int,
+        help="amount of samples to generate for each recording before calculating wer",
+        default=5,
     )
 
     return parser
