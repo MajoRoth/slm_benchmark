@@ -1,0 +1,3363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="SLM Benchmark Demo">
+    <meta property="og:title" content="SLM Benchmark Demo"/>
+
+
+    <title>SLM Benchmark Demo</title>
+<!--    <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico">-->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/css/bulma.min.css">
+    <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/audio-table.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="../static/js/fontawesome.all.min.js"></script>
+    <script src="../static/js/bulma-carousel.min.js"></script>
+    <script src="../static/js/bulma-slider.min.js"></script>
+    <script src="../static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero is-light">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">SLM Benchmark</h1>
+                    <div class="is-size-5 publication-authors">
+                        Demo
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="is-size-5 publication-authors">
+                        
+        background noises samples from FSD50K. we sampled recordings longer then 5 seconds and with only 1 leaf label.
+    
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    
+        
+            <section class="section hero">
+        
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">FSD50K dataset samples</h2>
+            <p>
+                sampled between all of the leaves in the ontology
+            </p>
+            <br>
+            <br>
+
+            <table class="audio-table">
+                <thead>
+                <tr>
+                    
+                        <th class="audio-header-row">class</th>
+                    
+                        <th class="audio-header-row">sample 1</th>
+                    
+                        <th class="audio-header-row">sample 2</th>
+                    
+                </tr>
+                </thead>
+                <tbody>
+
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Bark
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bark/236173.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bark/36902.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Siren
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Siren/338973.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Siren/46092.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Drip
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Drip/85883.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Drip/274042.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Drill
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Drill/42937.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Drill/262213.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Chirp, tweet
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chirp, tweet/389586.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chirp, tweet/233021.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Chewing, mastication
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chewing, mastication/128031.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chewing, mastication/345304.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Hi-hat
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Hi-hat/423748.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Hi-hat/93912.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Male speech, man speaking
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Male speech, man speaking/236486.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Male speech, man speaking/316802.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Piano
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Piano/173718.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Piano/11626.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Applause
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Applause/324188.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Applause/198087.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Race car, auto racing
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Race car, auto racing/77915.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Race car, auto racing/89567.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Hammer
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Hammer/94696.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Hammer/80447.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Crackle
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crackle/196335.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crackle/74334.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Bass drum
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bass drum/360397.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bass drum/90615.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Crack
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crack/70110.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crack/114241.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Subway, metro, underground
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Subway, metro, underground/160517.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Subway, metro, underground/126227.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Slam
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Slam/72676.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Slam/68659.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Screaming
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Screaming/104035.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Screaming/104032.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Cupboard open or close
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cupboard open or close/95003.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cupboard open or close/119879.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Walk, footsteps
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Walk, footsteps/138058.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Walk, footsteps/430221.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Raindrop
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Raindrop/7795.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Raindrop/260243.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Bicycle bell
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bicycle bell/328826.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bicycle bell/328825.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Gull, seagull
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gull, seagull/166710.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gull, seagull/390252.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Organ
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Organ/205692.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Organ/373734.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Tick-tock
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tick-tock/219222.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tick-tock/264319.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Bowed string instrument
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bowed string instrument/246748.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bowed string instrument/357973.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Microwave oven
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Microwave oven/175395.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Microwave oven/185883.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Toilet flush
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Toilet flush/195066.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Toilet flush/212089.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Harp
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Harp/4501.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Harp/415434.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Accordion
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Accordion/187033.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Accordion/339957.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Doorbell
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Doorbell/21986.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Doorbell/163730.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Cough
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cough/45578.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cough/336672.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Cricket
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cricket/192432.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cricket/134953.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Growling
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Growling/253945.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Growling/363104.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Camera
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Camera/407530.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Camera/365615.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Zipper (clothing)
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Zipper (clothing)/209225.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Zipper (clothing)/391351.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Thump, thud
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Thump, thud/267921.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Thump, thud/386007.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Printer
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Printer/345053.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Printer/182893.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Stream
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Stream/432439.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Stream/419929.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Church bell
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Church bell/219050.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Church bell/110407.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Yell
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Yell/258342.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Yell/379969.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Trumpet
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Trumpet/357602.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Trumpet/357737.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Glockenspiel
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Glockenspiel/373367.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Glockenspiel/373365.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Trickle, dribble
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Trickle, dribble/243558.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Trickle, dribble/243555.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Boat, Water vehicle
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Boat, Water vehicle/74471.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Boat, Water vehicle/420716.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Marimba, xylophone
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Marimba, xylophone/373577.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Marimba, xylophone/273881.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Crash cymbal
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crash cymbal/16253.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crash cymbal/269946.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Fireworks
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Fireworks/56949.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Fireworks/132273.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Coin (dropping)
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Coin (dropping)/379058.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Coin (dropping)/207523.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Harmonica
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Harmonica/330771.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Harmonica/116910.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Computer keyboard
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Computer keyboard/192069.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Computer keyboard/233020.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Cutlery, silverware
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cutlery, silverware/138050.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cutlery, silverware/155903.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Purr
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Purr/24966.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Purr/37305.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Crow
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crow/250811.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crow/135777.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Acoustic guitar
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Acoustic guitar/252523.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Acoustic guitar/82931.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Wind
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Wind/209027.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Wind/231920.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Motorcycle
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Motorcycle/338126.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Motorcycle/245694.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Dishes, pots, and pans
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Dishes, pots, and pans/65903.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Dishes, pots, and pans/80136.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Bus
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bus/147148.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bus/165416.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Crying, sobbing
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crying, sobbing/154428.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crying, sobbing/14269.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Chatter
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chatter/257818.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chatter/15568.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Gunshot, gunfire
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gunshot, gunfire/164666.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gunshot, gunfire/231245.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Tap
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tap/431535.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tap/392070.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Tearing
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tearing/418907.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tearing/335994.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Strum
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Strum/58072.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Strum/58022.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Scratching (performance technique)
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Scratching (performance technique)/26083.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Scratching (performance technique)/32181.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Whispering
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Whispering/193808.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Whispering/331379.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Wind chime
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Wind chime/49168.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Wind chime/423492.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Sliding door
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sliding door/327086.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sliding door/79185.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Water tap, faucet
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Water tap, faucet/21198.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Water tap, faucet/333440.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Fixed-wing aircraft, airplane
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Fixed-wing aircraft, airplane/208846.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Fixed-wing aircraft, airplane/143560.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Squeak
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Squeak/151590.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Squeak/85936.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Bathtub (filling or washing)
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bathtub (filling or washing)/108409.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bathtub (filling or washing)/24089.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Crowd
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crowd/336997.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crowd/197276.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Ratchet, pawl
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Ratchet, pawl/393492.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Ratchet, pawl/393491.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Sink (filling or washing)
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sink (filling or washing)/212116.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sink (filling or washing)/257609.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Boiling
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Boiling/19845.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Boiling/167475.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Tambourine
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tambourine/387784.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tambourine/63271.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Gurgling
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gurgling/344537.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gurgling/337483.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Fart
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Fart/100069.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Fart/100082.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Truck
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Truck/362120.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Truck/134898.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Female singing
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Female singing/330706.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Female singing/251475.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Snare drum
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Snare drum/323246.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Snare drum/144482.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Drawer open or close
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Drawer open or close/32630.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Drawer open or close/414468.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Clapping
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Clapping/160134.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Clapping/160135.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Male singing
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Male singing/324376.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Male singing/195219.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Chuckle, chortle
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chuckle, chortle/395408.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chuckle, chortle/277547.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Fill (with liquid)
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Fill (with liquid)/335755.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Fill (with liquid)/376864.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Burping, eructation
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Burping, eructation/407685.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Burping, eructation/263508.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Skateboard
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Skateboard/433723.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Skateboard/353955.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Vehicle horn, car horn, honking
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Vehicle horn, car horn, honking/379754.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Vehicle horn, car horn, honking/162541.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Rattle
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Rattle/426262.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Rattle/366209.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Waves, surf
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Waves, surf/234089.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Waves, surf/234096.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Train
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Train/59440.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Train/112803.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Car passing by
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Car passing by/411842.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Car passing by/425850.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Chink, clink
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chink, clink/339652.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chink, clink/186531.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Hiss
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Hiss/170738.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Hiss/213150.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Boom
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Boom/322504.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Boom/93834.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Electric guitar
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Electric guitar/64704.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Electric guitar/64742.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Typewriter
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Typewriter/204465.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Typewriter/193974.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Scissors
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Scissors/272442.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Scissors/169496.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Speech synthesizer
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Speech synthesizer/256337.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Speech synthesizer/256353.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Splash, splatter
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Splash, splatter/318189.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Splash, splatter/320185.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Packing tape, duct tape
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Packing tape, duct tape/34939.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Packing tape, duct tape/325560.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Meow
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Meow/130034.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Meow/390502.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Rattle (instrument)
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Rattle (instrument)/404841.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Rattle (instrument)/260947.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Idling
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Idling/398675.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Idling/426818.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Female speech, woman speaking
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Female speech, woman speaking/44182.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Female speech, woman speaking/94748.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Ringtone
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Ringtone/167540.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Ringtone/77928.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Accelerating, revving, vroom
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Accelerating, revving, vroom/322550.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Accelerating, revving, vroom/36830.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Cheering
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cheering/332306.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Cheering/112254.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Frying (food)
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Frying (food)/77483.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Frying (food)/233296.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Run
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Run/102541.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Run/140219.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Engine starting
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Engine starting/371832.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Engine starting/421482.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Frog
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Frog/344118.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Frog/80790.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Keys jangling
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Keys jangling/9185.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Keys jangling/240687.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Buzz
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Buzz/144017.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Buzz/21681.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Whoosh, swoosh, swish
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Whoosh, swoosh, swish/121739.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Whoosh, swoosh, swish/149897.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Chicken, rooster
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chicken, rooster/71030.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Chicken, rooster/397027.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Gasp
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gasp/232472.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gasp/106237.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Crumpling, crinkling
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crumpling, crinkling/116754.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crumpling, crinkling/37175.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Shatter
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Shatter/179235.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Shatter/379015.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Wind instrument, woodwind instrument
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Wind instrument, woodwind instrument/121504.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Wind instrument, woodwind instrument/13458.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Drum kit
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Drum kit/323224.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Drum kit/101904.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Mechanical fan
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Mechanical fan/17445.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Mechanical fan/17444.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Screech
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Screech/172407.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Screech/43426.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Gong
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gong/375554.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Gong/209941.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Crushing
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crushing/333910.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Crushing/71934.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Child speech, kid speaking
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Child speech, kid speaking/53978.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Child speech, kid speaking/53984.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Knock
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Knock/427111.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Knock/188883.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Bass guitar
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bass guitar/163005.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Bass guitar/413892.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Sigh
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sigh/363647.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sigh/363646.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Traffic noise, roadway noise
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Traffic noise, roadway noise/59056.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Traffic noise, roadway noise/319942.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Finger snapping
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Finger snapping/50758.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Finger snapping/176153.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Sneeze
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sneeze/157297.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sneeze/184434.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Giggle
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Giggle/219769.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Giggle/368385.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Sawing
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sawing/351775.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Sawing/250521.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Thunder
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Thunder/151196.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Thunder/158980.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Tick
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tick/219553.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Tick/260831.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Conversation
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Conversation/23735.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Conversation/165238.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                    <tr>
+                        <td class="">
+                            <p>
+                                Writing
+                            </p>
+                        </td>
+
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Writing/231454.wav">
+                                </audio>
+                            </td>
+                        
+                            <td class="audio-cell">
+                                <audio controls style="width: 90px;">
+                                    <source src="../audio/background_noises_samples/Writing/371330.wav">
+                                </audio>
+                            </td>
+                        
+
+                    </tr>
+                
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    </section>
+
+    
+
+
+
+
+</body>
+</html>

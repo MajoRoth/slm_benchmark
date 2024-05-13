@@ -5,7 +5,7 @@ from pathlib import Path
 from jinja2 import FileSystemLoader, Environment
 
 
-def render_page(index_path, description, sections):
+def render_page(name, description, sections):
     loader = FileSystemLoader(searchpath="./templates")
     env = Environment(loader=loader)
     template = env.get_template("demo.html.jinja2")
@@ -17,16 +17,16 @@ def render_page(index_path, description, sections):
 
     )
 
-    if not os.path.exists(os.path.dirname(index_path)):
-        os.makedirs(os.path.dirname(index_path))
+    dir_name = Path(__file__).parent / name
 
-    with open(index_path, 'w') as f:
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
+    with open(dir_name / "index.html", 'w') as f:
         f.write(html)
 
 
 def render_background():
-    index_path = "/Users/amitroth/PycharmProjects/slm_benchmark/background/index.html"
-
     description = """
         background noises samples from FSD50K. we sampled recordings longer then 5 seconds and with only 1 leaf label.
     """
@@ -35,7 +35,7 @@ def render_background():
 
 
     wavs = [
-        [Path(os.path.relpath(p, os.path.dirname(index_path))) for p in dir.glob("*")] for dir in dirs
+        [Path("../") / Path(os.path.relpath(p, os.path.dirname(__file__))) for p in dir.glob("*")] for dir in dirs
     ]
 
     background_sections = [
@@ -58,9 +58,11 @@ def render_background():
 
     print(background_sections)
 
-    render_page(index_path=index_path, description=description, sections=background_sections)
+    render_page(name='background', description=description, sections=background_sections)
 
 
+def render_emotions():
+    pass
 
 if __name__ == '__main__':
     render_background()
