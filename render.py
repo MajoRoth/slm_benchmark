@@ -144,23 +144,48 @@ def render_bg_consistency():
     render_page(name='bg_consistency', description=description, sections=sections)
 
 
+
+def render_bg_alignment():
+    description = """
+        bg alignment
+    """
+
+    sections = [
+        {
+            "title": f"bg alignment",
+            "description": f"bg alignment",
+            "table": {
+                "headers": ["index", "positive", "negative 1", "negative 2", "negative 2"],
+                "content": [
+                    [
+                        f"{i}",
+                        f"../audio/bg_alignment/sample_{i}_0.wav",
+                        f"../audio/bg_alignment/sample_{i}_1.wav",
+                        f"../audio/bg_alignment/sample_{i}_2.wav",
+                        f"../audio/bg_alignment/sample_{i}_3.wav"
+
+                    ] for i in range(5)
+                ]
+            }
+        }
+    ]
+
+    render_page(name='bg_alignment', description=description, sections=sections)
+
+
+
 def render_homepage():
     loader = FileSystemLoader(searchpath="./templates")
     env = Environment(loader=loader)
     template = env.get_template("home.html.jinja2")
 
-    dirs = [
-        "background",
-        "bg_consistency",
-        "emotions"
-    ]
+    index_files = list(Path(__file__).parent.glob("*/index.html"))
+    dirs = [p.parts[-2] for p in index_files]
 
     html = template.render(
         page_title="Hebrew TTS",
         dirs=dirs,
     )
-
-
 
     with open("index.html", 'w') as f:
         f.write(html)
@@ -171,5 +196,6 @@ if __name__ == '__main__':
     render_background()
     render_emotions()
     render_bg_consistency()
+    render_bg_alignment()
 
     render_homepage()
