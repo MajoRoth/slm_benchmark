@@ -98,7 +98,78 @@ def render_emotions():
     render_page(name='emotions', description=description_emotion, sections=emotion_sections)
 
 
+def render_bg_consistency():
+    description = """
+        bg consistency
+    """
+
+    sections = [
+        {
+            "title": f"random",
+            "description": f"random",
+            "table": {
+                "headers": ["index", "positive", "negative 1", "negative 2", "negative 3"],
+                "content": [
+                    [
+                        f"{i}",
+                        f"../audio/background_consistency/random/sample_{i}_pos.wav",
+                        f"../audio/background_consistency/random/sample_{i}_neg_0.wav",
+                        f"../audio/background_consistency/random/sample_{i}_neg_1.wav",
+                        f"../audio/background_consistency/random/sample_{i}_neg_2.wav"
+
+
+                    ] for i in range(5)
+                ]
+            }
+        },
+
+        {
+            "title": f"in domain",
+            "description": f"in domain",
+            "table": {
+                "headers": ["index", "positive", "negative 1", "negative 2"],
+                "content": [
+                    [
+                        f"{i}",
+                        f"../audio/background_consistency/in_domain/sample_{i}_pos.wav",
+                        f"../audio/background_consistency/in_domain/sample_{i}_neg_0.wav",
+                        f"../audio/background_consistency/in_domain/sample_{i}_neg_1.wav",
+
+                    ] for i in range(5)
+                ]
+            }
+        }
+    ]
+
+    render_page(name='bg_consistency', description=description, sections=sections)
+
+
+def render_homepage():
+    loader = FileSystemLoader(searchpath="./templates")
+    env = Environment(loader=loader)
+    template = env.get_template("home.html.jinja2")
+
+    dirs = [
+        "background",
+        "bg_consistency",
+        "emotions"
+    ]
+
+    html = template.render(
+        page_title="Hebrew TTS",
+        dirs=dirs,
+    )
+
+
+
+    with open("index.html", 'w') as f:
+        f.write(html)
+
+
 
 if __name__ == '__main__':
     render_background()
     render_emotions()
+    render_bg_consistency()
+
+    render_homepage()
