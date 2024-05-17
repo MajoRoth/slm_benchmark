@@ -97,6 +97,36 @@ def render_emotions():
 
     render_page(name='emotions', description=description_emotion, sections=emotion_sections)
 
+def render_emotions_microsoft():
+    description_emotion = """
+
+        Emotional Speakers Compression for SLM Acoustic Benchmark.
+        Samples are generated using Azure Neural TTS
+        """
+
+    with open("audio/sentiment_alignment/microsoft/metadata.json", 'r') as f:
+        sentiment_json = json.load(f)
+
+    emotion_sections = [
+        {
+            "title": f"sample {sample['sample']} with {text} text.",
+            "description": f"{sample[f'{text}_text']}",
+            "table": {
+                "headers": ["speaker", "sad sample", "happy sample"],
+                "content": [
+                    [
+                        f"{speaker['speaker']}",
+                        speaker['generated_audio'][f'sad_{text}'],
+                        speaker['generated_audio'][f'cheerful_{text}'],
+
+                    ] for speaker in sample['speakers']
+                ]
+            }
+        } for sample in sentiment_json for text in ['happy', 'sad']
+    ]
+
+    render_page(name='emotions_microsoft', description=description_emotion, sections=emotion_sections)
+
 
 def render_bg_consistency():
     description = """
@@ -197,5 +227,6 @@ if __name__ == '__main__':
     render_emotions()
     render_bg_consistency()
     render_bg_alignment()
+    render_emotions_microsoft()
 
     render_homepage()
