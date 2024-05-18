@@ -180,21 +180,66 @@ def render_bg_alignment():
         bg alignment
     """
 
+    with open("audio/bg_alignment/before/metadata.json", 'r') as f:
+        before_json = json.load(f)
+
+    with open("audio/bg_alignment/after/metadata.json", 'r') as f:
+        after_json = json.load(f)
+
+    with open("audio/bg_alignment/together/metadata.json", 'r') as f:
+        together_json = json.load(f)
+
     sections = [
         {
             "title": f"bg alignment",
-            "description": f"bg alignment",
+            "description": f"together",
             "table": {
-                "headers": ["index", "positive", "negative 1", "negative 2", "negative 2"],
+                "headers": ["class - index", "positive", "negative 1", "negative 2", "negative 3"],
                 "content": [
                     [
-                        f"{i}",
-                        f"../audio/bg_alignment/sample_{i}_0.wav",
-                        f"../audio/bg_alignment/sample_{i}_1.wav",
-                        f"../audio/bg_alignment/sample_{i}_2.wav",
-                        f"../audio/bg_alignment/sample_{i}_3.wav"
+                        f"{sample[1]} - {sample[2]}",
+                        f"../audio/bg_alignment/together/sample_{sample[0]}_0.wav",
+                        f"../audio/bg_alignment/together/sample_{sample[0]}_1.wav",
+                        f"../audio/bg_alignment/together/sample_{sample[0]}_2.wav",
+                        f"../audio/bg_alignment/together/sample_{sample[0]}_3.wav"
 
-                    ] for i in range(5)
+                    ] for sample in together_json
+                ]
+            }
+        },
+
+        {
+            "title": f"bg alignment",
+            "description": f"before",
+            "table": {
+                "headers": ["class - index", "positive", "negative 1", "negative 2", "negative 3"],
+                "content": [
+                    [
+                        f"{sample[1]} - {sample[2]}",
+                        f"../audio/bg_alignment/before/sample_{sample[0]}_0.wav",
+                        f"../audio/bg_alignment/before/sample_{sample[0]}_1.wav",
+                        f"../audio/bg_alignment/before/sample_{sample[0]}_2.wav",
+                        f"../audio/bg_alignment/before/sample_{sample[0]}_3.wav"
+
+                    ] for sample in before_json
+                ]
+            }
+        },
+
+        {
+            "title": f"bg alignment",
+            "description": f"after",
+            "table": {
+                "headers": ["class - index", "positive", "negative 1", "negative 2", "negative 3"],
+                "content": [
+                    [
+                        f"{sample[1]} - {sample[2]}",
+                        f"../audio/bg_alignment/after/sample_{sample[0]}_0.wav",
+                        f"../audio/bg_alignment/after/sample_{sample[0]}_1.wav",
+                        f"../audio/bg_alignment/after/sample_{sample[0]}_2.wav",
+                        f"../audio/bg_alignment/after/sample_{sample[0]}_3.wav"
+
+                    ] for sample in after_json
                 ]
             }
         }
